@@ -1,8 +1,7 @@
 import calc
+from calc import subtract
 
-def subtract(a, b):
-    result = a - b
-    return result
+
 
 def multiply(a, b):
     result = a * b
@@ -26,7 +25,7 @@ def run():
     if answer == "1":
         result = calc.add(a, b)
     if answer == "2":
-        result = subtract(a, b)
+        result = calc.subtract(a, b)
     if answer == "3":
         result = multiply (a, b)
     if answer == "4":
