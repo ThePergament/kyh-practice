@@ -1,0 +1,1 @@
+print("David Pergament, växte upp i Mölndal. Jag har aldrig programmerat förut. Jag sökte till PvT  för att det är en säker bransch")
