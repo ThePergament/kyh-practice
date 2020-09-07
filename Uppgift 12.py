@@ -1,12 +1,12 @@
 
 def is_it_too_long(name):
-    return len(name) > 5
+    return len(name) >
 def main():
         students ="anna beatrice cecilia doris esmeralda frida gunilla".split()
         students =input ("Ange studenternas namn med komma emellan: ").split(",")
         for name in students:
             if is_it_too_long(name):
-                print(f"{name} är för långt!")
+                print(f"{name.title()} är för långt!")
 
 
 if __name__ == '__main__':
