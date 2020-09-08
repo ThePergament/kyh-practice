@@ -4,9 +4,7 @@ ANIMALS = ['whale', 'cat', 'dog', 'cow']
 
 
 def run():
-    basket = [
-        'volvo', 'is', 'an', 'orange', 'apple', 'cat'
-    ]
+    basket = input("add items").split(',')
     cars = []
     fruits = []
     animals = []
@@ -29,6 +27,7 @@ def run():
 
 def write_things(items, kind):
     print(f"{kind.upper()}  ({len(items)}st)")
+    items =sorted(items)
     for item in items:
         print(f" {item}")
 
