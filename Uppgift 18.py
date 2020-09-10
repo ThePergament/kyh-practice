@@ -4,6 +4,7 @@ people = {
 'Lisa': '9999999999',
 'Bodil':'555-666-789'
 }
+#print(len(people)) antal pers 18.2
 
 vem = input('Vem vill du ringa?')
 if vem not in people:
