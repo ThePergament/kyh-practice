@@ -21,6 +21,7 @@
 
 import requests
 import json
+import datetime
 from pprint import pprint
 
 r=requests.get('https://proagile.se/api/publicEvents')
@@ -29,12 +30,11 @@ data=json.loads(r.text)
 namn= "Kursnamn:"
 startdatum= "Startdatum:"
 slutdatum="Slutdatum"
-
+#today = datetime.datetime.today()
 for i in data:
     if "name" in i:
         print(f"{namn}", i["name"])
     if "startDate" in i:
         print(f"{startdatum}", i["startDate"])
-            #(i(f"{startdatum}", int["startDate"]))
     if "endDate" in i:
         print(f"{slutdatum}", i["endDate"], "\n")
