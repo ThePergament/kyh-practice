@@ -12,8 +12,25 @@
     #Sista talet: 100
     #Summan av talen: 111
     #Talen baklänges: 100, 5, 3, 2, 1
+#Tips: Använd slicing och inbyggda funktionen sum().
+#Tips 2: Det går att lösa "Talen baklänges" på två sätt: det lätta sättet
+   #är med inbyggda funktionen reverse(). Det svåra sättet är med slicing syntax!
+   #Pröva båda :)
+#*numera kan det vara bokstäver i sifferdelen också. Det gör ont att se men det är moderna tider!
 
-regnr=input("Ange regnr:")
+#regnr=input("Ange regnr:")
 
-print (f"bokstav: {regnr[0:3]}")
-print (f"siffra: {regnr[3:6]}")
+#print (f"bokstav: {regnr[0:3]}")
+#print (f"siffra: {regnr[3:6]}")
+
+heltal=input("Ange tal med komma emellan:")
+ls=heltal.split(",")
+
+print(f"Första talet: {heltal[0]}")
+print(f"Andra talet: {heltal[0]}")
+ls2=[]
+for elem in ls:
+    ls2.append(int(elem))
+print(f"Summan av av talen är: {sum(ls2)}")
+backwards=", ".join (ls[::-1])
+print(f"Talen baklänges: {backwards}")
