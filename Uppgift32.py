@@ -5,4 +5,10 @@
 #Tips: använd det vi lärde oss igår kring att vända en sträng och/eller lista baklänges, och join-funktionen. Även list comprehension kan komma till användning."
 
 text =input ("Var god skriv något:")
-print (len(text))
+#print (len(text))
+
+text2 = text [::-1]
+if text2.lower() == text.lower():
+    print("Strängen är ett palindrom")
+else:
+    print("Strängen är inget palindrom, din nöt :P")
