@@ -6,9 +6,11 @@
 
 text =input ("Var god skriv något:")
 #print (len(text))
+text3 = text.join("")
+text2 = text3 [::-1]
+if text2.lower() == text3.lower():
 
-text2 = text [::-1]
-if text2.lower() == text.lower():
+
     print("Strängen är ett palindrom")
 else:
     print("Strängen är inget palindrom, din nöt :P")
