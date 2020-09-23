@@ -10,6 +10,13 @@ class Djur:
         self.carnivore=carnivore
         self. wiki_url=wiki_url
 
+    def carnivore_or_vegetarian(self):
+        if self.carnivore:
+            return "Köttätare"
+        else:
+            return "Vetegarian"
+
+
 if __name__ == '__main__':
     djur = []
     zebra = Djur('Zebra', False, 'https://sv.wikipedia.org/wiki/Zebror')
@@ -24,11 +31,13 @@ if __name__ == '__main__':
     djur.append(undulat)
 
     html = '<html><table>'
+
     for d in djur:
-        cell_2 = 'Vegetarian'
-        if d.carnivore:
-            cell_2 =  'Köttätare'
+
+        #if d.carnivore:
+        cell_2 = d.carnivore_or_vegetarian()
         html += f'<tr><td><a href="{d.wiki_url}">{d.name}</td><td>{cell_2}</td></tr>\n'
+
     html += '</table></html>'
     OUTPUT_PATH.write_text(html, encoding='utf8')
     webbrowser.open(str(OUTPUT_PATH))
