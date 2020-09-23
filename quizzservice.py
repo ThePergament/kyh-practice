@@ -20,5 +20,5 @@ class QuizzWebServiceAPI(object):
             'wrongAnswers': alternatives
         }
         # Uppgift 35.2: fyll i ???
-        r = requests.???(url=self.url, ???)
+        r = requests.post(url=self.url, json={'prompt','rightAnswer','wrongAnswers' })
         return True if r.status_code == 200 else False
