@@ -1,10 +1,8 @@
-def rev(string):
-    text=string[::-1]
-    return text
+def backwards(text):
+    if len(text) <= 1:
+        return text
 
-if __name__ == "__main__":
-    string = "Olof är snäll"
-
-    run = rev(string)
-    print(run)
-
+    return backwards(text[1:]) + text[0]
+string = "ojsan"
+run = backwards(string)
+print(run)
