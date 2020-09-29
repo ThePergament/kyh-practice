@@ -15,4 +15,8 @@
 
 #print(switch(numtupp))
 
-
+#ls=[1,2,3]
+#def list_to_tuple(ls):
+#    tp= (ls[0],ls[1], ls[2])
+#    return tp
+#print(list_to_tuple(ls))
