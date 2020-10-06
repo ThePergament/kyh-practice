@@ -16,7 +16,7 @@
             #counter = counter +1
     #print(counter)
 
-#if __name__ == '__main__':
+if __name__ == '__main__':
     #main()
 
 runners_in_order = ('Lisa Lasse Louise Leopold Lova Love Lennart Lena Lisette Linus'.split())
